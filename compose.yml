@@ -1,0 +1,9 @@
+services:
+  opencode:
+    image: ghcr.io/anomalyco/opencode:1.14.47
+    command: /root/workspace
+    volumes:
+      - ./.opencode:/root/.config/opencode
+      - ./workspace:/root/workspace
+    stdin_open: true
+    tty: true
