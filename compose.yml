@@ -5,6 +5,5 @@ services:
     volumes:
       - ./.opencode/config:/root/.config/opencode
       - ./.opencode/share:/root/.local/share/opencode
-      - ./workspace:/root/workspace
     stdin_open: true
     tty: true
