@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-mkdir -p $SCRIPT_DIR/.opencode
+mkdir -p $SCRIPT_DIR/.opencode/{config,share}
 mkdir -p $SCRIPT_DIR/workspace
 
 docker compose -f $SCRIPT_DIR/compose.yml run --rm opencode
